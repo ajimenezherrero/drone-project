@@ -1,0 +1,34 @@
+{
+  "name": "drone-project",
+  "version": "0.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "tape src/__test__/*.spec.js",
+    "lint": "eslint ./"
+  },
+  "author": "Alejandro Jimenez Herrero",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "4.16.0",
+    "eslint-config-cornerjob": "1.0.4",
+    "proxyquire": "1.8.0",
+    "sinon": "4.2.2",
+    "tape": "4.8.0"
+  },
+  "description": "",
+  "eslintConfig": {
+    "extends": "eslint-config-cornerjob",
+    "env": {
+      "es6": true
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 8
+    },
+    "rules": {
+      "promise/avoid-new": 0
+    }
+  }
+}
